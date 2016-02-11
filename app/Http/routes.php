@@ -30,4 +30,16 @@ Route::group(['middleware' => ['web']], function () {
   Route::get('facebook/authorize', function() {
     return SocialAuth::authorize('facebook');
   });
+
+  Route::get('linkedin/authorize', function() {
+    return SocialAuth::authorize('linkedin');
+  });
+
+  Route::get('github/authorize', function() {
+    return SocialAuth::authorize('github');
+  });
+
+  Route::get('google/authorize', function() {
+    return SocialAuth::authorize('google');
+  });
 });
