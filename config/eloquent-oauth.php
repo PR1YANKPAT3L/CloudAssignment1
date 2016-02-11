@@ -15,7 +15,7 @@ return [
         'google' => [
             'client_id' => '311447366874-kf7um0arh91tt5mk0m6k51poemjudeik.apps.googleusercontent.com',
             'client_secret' => 'zGNZxMM-HAHMzIdCn_qpYMOy',
-            'redirect_uri' => 'https://example.com/your/google/redirect',
+            'redirect_uri' => 'http://ec2-52-10-0-44.us-west-2.compute.amazonaws.com',
             'scope' => [],
         ],
         'github' => [
