@@ -24,10 +24,10 @@
 
 Route::group(['middleware' => ['web']], function () {
   Route::get('/', function () {
-      SocialAuth::login('facebook');
+
       return view('welcome');
   });
-  
+
   Route::get('facebook/authorize', function() {
     return SocialAuth::authorize('facebook', function($user, $details) {
       $user->nickname = $details->nickname;
@@ -35,6 +35,22 @@ Route::group(['middleware' => ['web']], function () {
       $user->profile_image = $details->avatar;
       $user->save();
     });
+  });
+
+  Route::get('facebook/callback', function () {
+    SocialAuth::login('facebook');
+  });
+
+  Route::get('linkedin/callback', function () {
+    SocialAuth::login('linkedin');
+  });
+
+  Route::get('github/callback', function () {
+    SocialAuth::login('github');
+  });
+
+  Route::get('google/callback', function () {
+    SocialAuth::login('google');
   });
 
   Route::get('linkedin/authorize', function() {
