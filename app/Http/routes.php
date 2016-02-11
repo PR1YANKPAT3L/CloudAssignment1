@@ -28,7 +28,12 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['web']], function () {
   Route::get('facebook/authorize', function() {
-    return SocialAuth::authorize('facebook');
+    return SocialAuth::authorize('facebook', function($user, $details) {
+      $user->nickname = $details->nickname;
+      $user->name = $details->full_name;
+      $user->profile_image = $details->avatar;
+      $user->save();
+    });
   });
 
   Route::get('linkedin/authorize', function() {
