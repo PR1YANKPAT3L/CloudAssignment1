@@ -11,9 +11,9 @@
             <div class="LoginContainer">
                 <ul>
                     <li><a href="/facebook/authorize"><img src="imgs/Facebook Square.png" alt="" /></a></li>
-                    <li><a href="/facebook/authorize"><img src="imgs/Google plus square.png" alt="" /></a></li>
-                    <li><a href="/facebook/authorze"><img src="imgs/Linkedin square.png" alt="" /></a></li>
-                    <li><a href="/facebook/authorize"><img src="imgs/Twitter square.png" alt="" /></a></li>
+                    <li><a href="/googleplus/authorize"><img src="imgs/Google plus square.png" alt="" /></a></li>
+                    <li><a href="/linkedin/authorize"><img src="imgs/Linkedin square.png" alt="" /></a></li>
+                    <li><a href="/twitter/authorize"><img src="imgs/Twitter square.png" alt="" /></a></li>
                 </ul>
             </div>
         </div>
