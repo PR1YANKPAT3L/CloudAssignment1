@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function () {
+    SocialAuth::login('facebook');
     return view('welcome');
 });
 
