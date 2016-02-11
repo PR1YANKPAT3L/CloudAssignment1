@@ -1,0 +1,13 @@
+{
+  "transport": "scp",
+  "hostname": "ec2-52-34-29-191.us-west-2.compute.amazonaws.com",
+  "port": 22,
+  "username": "ubuntu",
+  "keyfile": "/home/shankz/Downloads/UbuntuServer.pem",
+  "passphrase": "your_passphrase",
+  "target": "/home/ubuntu/CloudAssignment1",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ]
+}

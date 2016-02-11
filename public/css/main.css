@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.MainContainer,
+.LoginContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.LoginContainer {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.LoginContainer ul {
+  list-style: none;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  margin: 0 auto;
+}
+
+.LoginContainer ul li {
+  float: left;
+  margin: 0 20px;
+}
