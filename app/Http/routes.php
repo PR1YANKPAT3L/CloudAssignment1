@@ -11,11 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    SocialAuth::login('facebook');
-    return view('welcome');
-});
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -28,6 +23,11 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
+  Route::get('/', function () {
+      SocialAuth::login('facebook');
+      return view('welcome');
+  });
+  
   Route::get('facebook/authorize', function() {
     return SocialAuth::authorize('facebook', function($user, $details) {
       $user->nickname = $details->nickname;
