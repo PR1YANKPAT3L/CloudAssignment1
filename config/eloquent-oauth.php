@@ -13,8 +13,8 @@ return [
             'scope' => [],
         ],
         'google' => [
-            'client_id' => '12345678',
-            'client_secret' => 'y0ur53cr374ppk3y',
+            'client_id' => '311447366874-kf7um0arh91tt5mk0m6k51poemjudeik.apps.googleusercontent.com',
+            'client_secret' => 'zGNZxMM-HAHMzIdCn_qpYMOy',
             'redirect_uri' => 'https://example.com/your/google/redirect',
             'scope' => [],
         ],
